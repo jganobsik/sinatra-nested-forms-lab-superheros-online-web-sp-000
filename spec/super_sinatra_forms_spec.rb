@@ -15,7 +15,7 @@ describe App do
     end
   end
 
-  describe 'POST /teams' do
+  describe 'POST /team' do
     it 'submits the form' do
       visit '/'
       fill_in("team[name]", :with => "Team Ruby")
