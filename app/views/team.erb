@@ -7,12 +7,13 @@
 </div><br>
 
 
-<% @heros.each.with_index do |hero, index| %>
-  <div class="heros">
-    <h2>Hero Name: <%= hero[index].name %></h2><br>
-    <p>Hero Power: <%= hero[index].power %></p><br>
-    <p>Hero Biography: <%= hero[index].bio %></p>
-  </div><br>
+<% @team_members.each.with_index do |hero, index| %>
+  <h2>Hero Name: <%= @hero_name[index] %></h2>
+  <p>
+    Hero power: <%= @hero_power[index] %>
+    <br>
+    Hero biography: <%= @hero_bio[index] %>
+  </p>
 <% end %>
 
 
