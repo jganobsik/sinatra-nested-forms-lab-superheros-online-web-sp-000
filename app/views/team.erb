@@ -9,9 +9,9 @@
 
 <% @heros.each do |hero| %>
   <div class="heros">
-    <h2>Hero Name: <%= hero.name %></h2><br>
-    <p>Hero Power: <%= hero.power %></p><br>
-    <p>Hero Biography: <%= hero.bio %></p>
+    <h2>Hero Name: <%= hero[index].name %></h2><br>
+    <p>Hero Power: <%= hero[index].power %></p><br>
+    <p>Hero Biography: <%= hero[index].bio %></p>
   </div><br>
 <% end %>
 
