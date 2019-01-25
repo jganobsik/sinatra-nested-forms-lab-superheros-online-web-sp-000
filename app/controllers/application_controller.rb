@@ -9,7 +9,7 @@ class App < Sinatra::Base
     erb :super_hero
   end
 
-  post '/teams' do
+  post '/team' do
     @team_name = params[:team][:name]
     @team_motto = params[:team][:motto]
     @hero_name = []
@@ -23,6 +23,8 @@ class App < Sinatra::Base
     end
       erb :team
     end
+    
+   
 end
 
  
