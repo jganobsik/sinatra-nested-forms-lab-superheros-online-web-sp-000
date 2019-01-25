@@ -14,11 +14,11 @@ class App < Sinatra::Base
       params[:team][:hero].each do |details|
         Hero.new(details)
       end
-    @heros = params[:team][:heros]
-    @heros.each do |hero, item|
-      @hero_name << item[:name]
-      @hero_power << item[:power]
-      @hero_bio << item[:bio]
+   @team_members = params[:team][:members]
+    @team_members.each do |hero, attrib|
+      @hero_name << attrib[:name]
+      @hero_power << attrib[:power]
+      @hero_bio << attrib[:bio]
     end
 
       erb :team
