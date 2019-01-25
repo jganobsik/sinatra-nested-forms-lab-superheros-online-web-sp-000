@@ -11,9 +11,6 @@ class App < Sinatra::Base
      post '/teams' do
        @team_name = params[:team][:name]
     @team_motto = params[:team][:motto]
-      params[:team][:hero].each do |details|
-        Hero.new(details)
-      end
    @team_members = params[:team][:members]
     @team_members.each do |hero, attrib|
       @hero_name << attrib[:name]
